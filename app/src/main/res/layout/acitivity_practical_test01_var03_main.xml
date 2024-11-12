@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PracticalTest01Var03MainActivity">
+
+    <!-- Primul camp text pentru numere intregi -->
+    <EditText
+        android:id="@+id/editTextNumber1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Introduceti numarul 1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        />
+
+    <!-- Butonul pentru adunare (+) -->
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumber1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        />
+
+    <!-- Butonul pentru scadere (-) -->
+    <Button
+        android:id="@+id/buttonSubtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumber1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        />
+
+    <!-- Al doilea camp text pentru numere intregi -->
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Introduceti numarul 2"
+        app:layout_constraintTop_toBottomOf="@id/buttonAdd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        />
+
+    <!-- Campul text needitabil pentru afisarea mesajului -->
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rezultatul va fi afisat aici"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumber2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        />
+
+    <!-- Butonul pentru schimbarea contextului activitatii -->
+    <Button
+        android:id="@+id/buttonChangeActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deschide o noua activitate"
+        app:layout_constraintTop_toBottomOf="@id/textViewMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        />
+
+    <!-- Butonul pentru invocarea altei aplicatii -->
+    <Button
+        android:id="@+id/buttonInvokeApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invoke App"
+        app:layout_constraintTop_toBottomOf="@id/buttonChangeActivity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
